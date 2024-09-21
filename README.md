@@ -1,6 +1,7 @@
-# TypeScript
+# TaskManagerTS
 Repository for TypeScript course.
 
+You can check functionality on github pages: https://goodwin251.github.io/TaskManagerTS/
 ### Created by Solodkyi Yaroslav, student PD-42
 ___
 There is simple Task Manager program that can be launced on NodeJS and in browser with realisation of same functions.
