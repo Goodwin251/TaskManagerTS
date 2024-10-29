@@ -11,7 +11,7 @@ There is simple Task Manager program that can be launced on NodeJS and in browse
 - *develop* - for merging features
 - *js-to-ts* - added TaskManager base and translate it from JavaScript to TypeScript.
 - *feature/tsconfig* - added http-server and NodeJS, confiugred TypeScript compilation, take from index.js export classes and export type.
-
+- *feature/module* - refactor of code to make more clear structure of project with modules
 
 ## Code description
 

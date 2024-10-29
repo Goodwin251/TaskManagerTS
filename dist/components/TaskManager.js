@@ -1,6 +1,6 @@
 import { Task } from './Task.js';
 export class TaskManager {
-    tasks; // array type
+    tasks;
     constructor() {
         this.tasks = [];
     }

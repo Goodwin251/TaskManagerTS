@@ -1,12 +1,11 @@
-export type Priority = 'low' | 'normal' | 'high';
+import { Priority } from '../types/index.js';
+
 export class Task {
     title: string;
     description: string;
-    priority: Priority; // union type because of program specific, I understand that we didn't use that at lection
+    priority: Priority;
     completed: boolean;
     createdAt: string;
- 
-    //Added types
 
     constructor(newtitle: string, description: string, priority: Priority = 'normal') {
         this.title = newtitle;
@@ -21,7 +20,7 @@ export class Task {
     }
 
     updatePriority(newPriority: Priority): void {
-        const validPriorities: Priority[] = ['low', 'normal', 'high']; //Also array with union type to not let unknown param inside array
+        const validPriorities: Priority[] = ['low', 'normal', 'high'];
         if (validPriorities.includes(newPriority)) {
             this.priority = newPriority;
         } else {

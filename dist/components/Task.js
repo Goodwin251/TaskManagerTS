@@ -1,10 +1,9 @@
 export class Task {
     title;
     description;
-    priority; // union type because of program specific, I understand that we didn't use that at lection
+    priority;
     completed;
     createdAt;
-    //Added types
     constructor(newtitle, description, priority = 'normal') {
         this.title = newtitle;
         this.description = description;
@@ -16,7 +15,7 @@ export class Task {
         this.completed = true;
     }
     updatePriority(newPriority) {
-        const validPriorities = ['low', 'normal', 'high']; //Also array with union type to not let unknown param inside array
+        const validPriorities = ['low', 'normal', 'high'];
         if (validPriorities.includes(newPriority)) {
             this.priority = newPriority;
         }

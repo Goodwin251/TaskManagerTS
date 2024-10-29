@@ -1,7 +1,8 @@
-import { Task, Priority } from './Task.js'
+import { Task } from './Task.js';
+import { Priority } from '../types/index.js';
 
 export class TaskManager {
-    tasks: Task[]; // array type
+    tasks: Task[];
 
     constructor() {
         this.tasks = [];
@@ -81,5 +82,3 @@ export class TaskManager {
         console.log('All tasks cleared.');
     }
 }
-
-
